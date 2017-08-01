@@ -12,8 +12,14 @@ namespace Milionerzy
         {
             for (int questionNumber=1; questionNumber<= 12; questionNumber++)
             {
-                Console.WriteLine($"Pytanie numer {questionNumber}");
+                WriteQuestion(questionNumber);
+
             }
+        }
+
+        private static void WriteQuestion(int questionNumber)
+        {
+            Console.WriteLine($"Pytanie numer {questionNumber}");
         }
     }
 }
