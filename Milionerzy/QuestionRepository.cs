@@ -27,6 +27,7 @@ namespace Milionerzy
                 AnswerB = "Białego",
                 AnswerC = "Niebieskiego",
                 AnswerD = "Czerwonego",
+                Answer = 'C'
             },
             new Question()
             {
@@ -36,6 +37,7 @@ namespace Milionerzy
                 AnswerB = "Delfin",
                 AnswerC = "Flądra",
                 AnswerD = "MAkrela",
+                Answer = 'B'
             },
             new Question()
             {
@@ -45,6 +47,7 @@ namespace Milionerzy
                 AnswerB = "Tygrzyk paskowany",
                 AnswerC = "Czubajka",
                 AnswerD = "Komar",
+                Answer = 'C'
             },
             new Question()
             {
@@ -54,6 +57,7 @@ namespace Milionerzy
                 AnswerB = "Kono Subarashii Sekai ni Shukufu wo!",
                 AnswerC = "Date a Live",
                 AnswerD = "No.6",
+                Answer = 'D'
             },
             new Question()
             {
@@ -63,6 +67,7 @@ namespace Milionerzy
                 AnswerB = "Kanban",
                 AnswerC = "Agile",
                 AnswerD = "SOLID",
+                Answer = 'D'
             },
          };
     }

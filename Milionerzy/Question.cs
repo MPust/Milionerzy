@@ -18,6 +18,9 @@ namespace Milionerzy
         public string AnswerC { get; set; }
         public string AnswerD { get; set; }
 
+        public char Answer { get; set; }
+
+
 
     }
 
