@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 /// <summary>
 /// ToDo
-/// - uniezaleznic wielkosc liter
 /// -Przerwac gre po błednej odpowiedzi 
-/// - wyjsc z gracja
+/// - wyjsc z gracja :)
 /// </summary>
 
 namespace Milionerzy
 {
     class Program
     {
+        //Zmienne
         static QuestionRepository questionRepository = new QuestionRepository();
         static List<int> usedQuestionIds = new List<int>();
 
@@ -31,17 +31,18 @@ namespace Milionerzy
 
                 char answer = GetuserAnswer();
 
-                CheckAnswerToQuestion(answer, question);
-
+                if (question.IsCorrectAnswer(answer))
+                    Console.WriteLine("Gratulacje - przechodzisz dalej!");
+                else
+                {
+                    Console.WriteLine($"Przykro mi - zła odpowiedź. Prawidłowa odpowiedź to {question.Answer}");
+                    Environment.Exit(0);
+                }
             }
-        }
 
-        private static void CheckAnswerToQuestion(char userAnswer, Question question)
-        {
-            if (char.ToUpperInvariant(userAnswer) == question.Answer)
-                Console.WriteLine("Gratulacje - przechodzisz dalej!");
-            else
-                Console.WriteLine($"Przykro mi - zła odpowiedź to {question.Answer}");
+
+
+
         }
 
         private static char GetuserAnswer()
