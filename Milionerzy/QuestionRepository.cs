@@ -36,7 +36,7 @@ namespace Milionerzy
                 AnswerA = "Rekin",
                 AnswerB = "Delfin",
                 AnswerC = "Flądra",
-                AnswerD = "MAkrela",
+                AnswerD = "Makrela",
                 Answer = 'B'
             },
             new Question()
